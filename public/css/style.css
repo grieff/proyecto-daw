@@ -1,0 +1,505 @@
+        @import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Roboto&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap');
+         :root {
+            --headerbg: url('https://i.imgur.com/Jb0apEi.png');
+        }
+        
+        body {
+            margin-top: 0 auto;
+            background-color: #fafafa;
+            font-family: 'Lato', sans-serif;
+        }
+        
+        h1,
+        h2,
+        h3 {
+            /*font-family: 'Roboto', sans-serif;*/
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .header-h1 {
+            background: var(--headerbg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 150px;
+            width: 100%;
+            font-family: 'Mr Dafoe', cursive;
+            font-size: 4rem;
+            word-spacing: 15px;
+            color: white;
+            padding: 35px 0px 0px 100px;
+            margin-bottom: 20px;
+            margin-top: -5px;
+        }
+        /* ******* CABECERA ******* */
+        /* ******* NAVEGACION ******* */
+        
+        .logo-icon {
+            max-width: 55px;
+        }
+        /* ***************************************** */
+        /* ******* INDEX ******* */
+        
+        #index {
+            margin-top: -2px;
+            min-height: 610px;
+        }
+        
+        .carousel-link {
+            color: white;
+        }
+        /* ***************************************** */
+        /* ******* CUERPO ******* */
+        
+        .calendario h5 {
+            line-height: 1.75rem;
+        }
+        
+        .flex-btn {
+            display: flex;
+        }
+        
+        .contador h3,
+        .contador h5 {
+            text-align: center;
+        }
+        
+        .card-title {
+            text-align: center;
+        }
+        /* Calendario */
+        
+        .calendario {
+            width: auto;
+            /*    height: 500px;*/
+            margin: 10px;
+            padding: 5px 5px;
+            padding-left: 25px;
+            /* border-left: 1px solid var(--gray); */
+            align-self: center;
+        }
+        
+        #calendar {
+            width: 100%;
+            overflow: hidden;
+            justify-content: right;
+        }
+        
+        .fc-button-group>.fc-button {
+            border-radius: 15px;
+        }
+        
+        .titulo_calendario {
+            text-align: center;
+        }
+        
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 0.5fr 1fr;
+            gap: 5px 15px;
+            grid-template-areas: "ultimas-noticias calendario" "ultimas-noticias conocenos";
+        }
+        
+        .calendario {
+            grid-area: calendario;
+        }
+        
+        .conocenos {
+            grid-area: conocenos;
+            margin: 10px;
+            padding: 5px 5px;
+            padding-left: 25px;
+        }
+        
+        .ultimas-noticias {
+            grid-area: ultimas-noticias;
+        }
+        /* ***************************************** */
+        /* ******* PLANTILLA  ******* */
+        
+        #plantilla {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 0.5fr 1fr repeat(3, 0.5fr) 1fr 0.5fr;
+            gap: 1px 1px;
+            grid-template-areas: "oboe clarinete clarinete-bajo""flauta clarinete saxofon""fagot clarinete saxofon-tenor""requinto clarinete saxofon-baritono""fliscorno trompeta bombardino""trompa trompeta percusion""trombon trompeta tuba";
+            margin: 50px 100px 20px 150px;
+            /* margin-bottom: 35px; */
+        }
+        
+        .oboe {
+            grid-area: oboe;
+        }
+        
+        .flauta {
+            grid-area: flauta;
+        }
+        
+        .fagot {
+            grid-area: fagot;
+        }
+        
+        .requinto {
+            grid-area: requinto;
+        }
+        
+        .clarinete {
+            grid-area: clarinete;
+        }
+        
+        .clarinete-bajo {
+            grid-area: clarinete-bajo;
+        }
+        
+        .saxofon {
+            grid-area: saxofon;
+        }
+        
+        .saxofon-tenor {
+            grid-area: saxofon-tenor;
+        }
+        
+        .saxofon-baritono {
+            grid-area: saxofon-baritono;
+        }
+        
+        .trompeta {
+            grid-area: trompeta;
+        }
+        
+        .fliscorno {
+            grid-area: fliscorno;
+        }
+        
+        .trompa {
+            grid-area: trompa;
+        }
+        
+        .percusion {
+            grid-area: percusion;
+        }
+        
+        .tuba {
+            grid-area: tuba;
+        }
+        
+        .trombon {
+            grid-area: trombon;
+        }
+        
+        .bombardino {
+            grid-area: bombardino;
+        }
+        
+        .info-general-banda {
+            margin: 5px 100px -20px 150px;
+        }
+        /* ***************************************** */
+        /* ******* EVENTOS ******* */
+        
+        .events {
+            margin: 0px 20px 20px 0px;
+            border: none;
+        }
+        
+        .no-border {
+            border: none;
+        }
+        
+        #calendar-events {
+            height: 900px;
+            width: 90%;
+            overflow: hidden;
+            margin-left: 50px;
+        }
+        
+        .fc-title {
+            white-space: normal;
+        }
+        /* ***************************************** */
+        /* ******* HISTORIA ******* */
+        /* Origenes */
+        
+        #historia {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.2fr repeat(2, 1.5fr);
+            gap: 1px 25px;
+            grid-template-areas: "historia-title""descripcion-historia""descripcion-historia";
+            margin: 0px 60px 20px 60px;
+            width: 90%;
+        }
+        
+        .historia-title {
+            grid-area: historia-title;
+        }
+        
+        .descripcion-historia {
+            grid-area: descripcion-historia;
+            text-align: justify;
+        }
+        /* Directores */
+        
+        .timeline {
+            padding: 10px 0px;
+            width: 80%;
+            margin-left: 10%;
+            margin-bottom: 20px;
+        }
+        
+        .timeline:before {
+            content: "";
+            display: inherit;
+            position: absolute;
+            top: 275px;
+            left: 65px;
+            width: 3px;
+            height: 110%;
+            background: #74bcb3;
+            opacity: 0;
+        }
+        
+        .timeline .column {
+            margin: 10px 40px 10px 30px;
+        }
+        
+        .timeline .column .title h1 {
+            font-size: 90px;
+            color: rgba(0, 0, 0, 0.1);
+            font-family: inherit;
+            font-weight: 400;
+            letter-spacing: 3px;
+            /* line-height: 6.5rem; */
+        }
+        
+        .top-h1 {
+            margin-bottom: -40px;
+        }
+        
+        .timeline .column .title h1:before {
+            content: "";
+            display: inherit;
+            position: relative;
+            left: -120px;
+            top: 86px;
+            width: 10px;
+            height: 10px;
+            background: #fff;
+            border: 3px solid #74bcb3;
+            opacity: 0;
+        }
+        
+        .timeline .column .title h2 {
+            margin-top: -60px;
+            font-size: 33px;
+            font-family: inherit;
+            font-weight: 400;
+        }
+        
+        .timeline .column .description p {
+            font-size: 13px;
+            line-height: 20px;
+            margin-left: 20px;
+            margin-top: 10px;
+            font-family: inherit;
+            text-align: justify;
+        }
+        
+        .timeline .column .description {
+            border-left: 1px solid #000;
+            font-family: inherit;
+        }
+        
+        .img-director img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            height: 50%;
+            width: 50%;
+            margin-bottom: 40px;
+        }
+        /* ***************************************** */
+        /* ******* GALERIA  ******* */
+        
+        .jumbotron {
+            width: 75%;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+        
+        .jumbo-text {
+            background-color: rgba(0, 0, 0, 0.4);
+            padding-bottom: 15px;
+        }
+        
+        .jumbo-text-mini {
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+        /* ***************************************** */
+        /* ******** INTRANET ******** */
+        
+        .intranet-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 5px 15px;
+            grid-template-areas: "tablon-anuncios partituras" "tablon-anuncios intra-miembros";
+            margin: 10px 30px 20px 50px;
+        }
+        
+        .tablon-anuncios {
+            grid-area: tablon-anuncios;
+        }
+        
+        .partituras {
+            grid-area: partituras;
+        }
+        
+        .intra-miembros {
+            grid-area: intra-miembros;
+        }
+        
+        .centered {
+            text-align: center;
+            justify-content: center;
+        }
+        /* ******* FORMULARIOS ******* */
+        
+        form {
+            margin: 40px 150px 80px 150px;
+        }
+        
+        .icon-style {
+            color: rgba(0, 0, 0, 0.5);
+        }
+        
+        .vspace {
+            /* padding-bottom: 10px; */
+            margin-top: 10px;
+        }
+        
+        #muser,
+        #mpass {
+            pointer-events: none;
+        }
+        /* Chrome, Safari, Edge, Opera */
+        
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        /* Firefox */
+        
+        input[type=number] {
+            -moz-appearance: textfield;
+        }
+        
+        .spaceform {
+            margin-right: 20px;
+        }
+        /* ***************************************** */
+        /* ******* LISTA ******* */
+        
+        .tabla-miembros {
+            margin: 0 auto;
+            width: 90%;
+            margin-bottom: 50px;
+        }
+        
+        .buttons-miembros {
+            display: flex;
+            align-self: flex-start;
+            justify-content: flex-start;
+            margin: 10px 0px 20px 40px;
+        }
+        
+        .pg-miembros {
+            display: flex;
+            /* align-self: flex-end; */
+            justify-content: flex-end;
+            margin: 10px 40px 0px 0px;
+        }
+        
+        .password {
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .passnueva {
+            width: 150px;
+            margin: 0 auto;
+        }
+        /* ***************************************** */
+        /* ******* CALENDARIO MIEMBROS ******* */
+        
+        #calendar {
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 40px;
+        }
+        /* ***************************************** */
+        /* ******* FORM EVENTOS  ******* */
+        
+        #datetimepicker-inicio,
+        #datetimepicker-fin {
+            width: 150px;
+        }
+        
+        #hora-inicio,
+        #hora-fin {
+            width: 150px;
+            margin-top: -36px;
+            margin-left: 160px;
+        }
+        /* ***************************************** */
+        /* ******* PARTITURAS ******* */
+        
+        #lista-partituras {
+            min-height: 275px;
+        }
+        /* ***************************************** */
+        /* ******* LOGIN ******* */
+        
+        .login {
+            margin: 50px 200px 100px 75px;
+            margin-bottom: 100px;
+        }
+        
+        .login input {
+            margin: 10px;
+            margin-right: 75px;
+        }
+        
+        #loginBtn {
+            margin: 10px 10px;
+        }
+        
+        .input-error {
+            box-shadow: 0 0 5px red;
+        }
+        /* ***************************************** */
+        /* ******* FOOTER ******* */
+        
+        footer {
+            margin-top: 10px;
+            margin-bottom: -10px;
+            /* position: fixed; */
+            width: 100%;
+        }
+        
+        footer h5,
+        footer p {
+            text-align: center;
+        }
+        
+        .email-banda {
+            font-size: 1.2rem;
+            font-weight: bolder;
+            padding-bottom: 5px;
+        }
+        /* *****************************************
+/* *****************************************

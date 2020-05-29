@@ -1,0 +1,162 @@
+        /* Responsive Style CSS */
+        /* ******* NAVEGACION ******* */
+        
+        @media only screen and (max-width: 990px) {
+            .right-dropdown-menu {
+                margin-right: -50px;
+            }
+        }
+        /* ***************************************** */
+        /* ******* INDEX ******* */
+        
+        @media only screen and (max-width: 950px) {
+            .grid-container {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 0.5fr 0.7fr;
+                gap: 5px 15px;
+                grid-template-areas: "ultimas-noticias" "calendario" "conocenos";
+            }
+        }
+        /* ***************************************** */
+        /* ******* PLANTILLA  ******* */
+        
+        @media only screen and (max-width: 700px) {
+            #plantilla {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: 0.5fr 1fr repeat(6, 0.5fr) repeat(2, 1fr);
+                gap: 1px 1px;
+                grid-template-areas: "oboe clarinete""flauta clarinete""fagot clarinete""requinto clarinete-bajo""saxofon saxofon-baritono""saxofon saxofon-tenor""fliscorno bombardino""trombon trompeta""trompa trompeta""percusion tuba";
+                margin: 10px 50px 5x 80px;
+                font-size: 0.85rem;
+            }
+            #plantilla h3 {
+                font-size: 1.2rem;
+            }
+            .info-general-banda {
+                margin: 5px 50px 20px 80px;
+                font-size: 0.85rem;
+            }
+            .info-general-banda h3 {
+                font-size: 1.2rem;
+            }
+        }
+        
+        @media only screen and (max-width: 450px) {
+            #plantilla {
+                margin: 10px 20px 5px 30px;
+            }
+            .info-general-banda {
+                margin: 0px 20px 5px 30px;
+            }
+        }
+        /* ***************************************** */
+        /* ******* HISTORIA ******* */
+        
+        @media only screen and (max-width: 1000px) {
+            .descripcion-historia {
+                margin-top: -5%;
+            }
+        }
+        
+        @media only screen and (max-width: 600px) {
+            #historia p {
+                margin: 0px 20px 20px 20px;
+            }
+            .descripcion-historia {
+                margin-top: -10%;
+            }
+        }
+        
+        @media only screen and (max-width: 500px) {
+            #historia {
+                gap: 0px 0px;
+                grid-template-rows: 0.1fr repeat(2, 0.9fr);
+                width: 95%;
+                margin-left: 5%;
+            }
+            .descripcion-historia {
+                margin-top: -18%;
+            }
+        }
+        /* ***************************************** */
+        /* ******* DIRECTORES ******* */
+        
+        @media only screen and (max-width: 700px) {
+            .timeline {
+                margin-left: 5%;
+            }
+            .timeline .column .title h1 {
+                font-size: 70px;
+            }
+            .timeline .column .title h2 {
+                font-size: 25px;
+            }
+            .timeline .column .description p {
+                font-size: 11px;
+            }
+        }
+        
+        @media only screen and (max-width: 500px) {
+            .timeline .column .title h1 {
+                font-size: 55px;
+            }
+            .timeline .column .title h2 {
+                font-size: 20px;
+                margin-top: -40px;
+            }
+            .timeline .column .description p {
+                font-size: 10px;
+            }
+        }
+        /* ***************************************** */
+        /* ******* EVENTOS ******* */
+        
+        @media only screen and (max-width: 1400px) {
+            #calendar-events {
+                height: 90%;
+            }
+        }
+        
+        @media only screen and (max-width: 800px) {
+            .fc-header-toolbar {
+                scale: 75%;
+            }
+            #calendar-events {
+                height: 85%;
+            }
+        }
+        
+        @media only screen and (max-width: 650px) {
+            .calendario {
+                padding-left: 0px;
+                margin: 1%;
+            }
+            #calendar-events {
+                width: 100%;
+                margin-left: 5%;
+                height: 80%;
+            }
+        }
+        /* ***************************************** */
+        /* ******* FORMULARIOS ******* */
+        
+        @media only screen and (max-width: 990px) {
+            form {
+                margin: 40px 100px 80px 100px;
+            }
+        }
+        
+        @media only screen and (max-width: 800px) {
+            form {
+                margin: 40px 80px 80px 80px;
+            }
+        }
+        
+        @media only screen and (max-width: 600px) {
+            form {
+                margin: 40px 50px 80px 50px;
+            }
+        }
+        /* ***************************************** */
