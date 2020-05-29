@@ -7,7 +7,7 @@
 		public static function conexion() {
 			try {
 
-				$conexion = new PDO('mysql:host=localhost; dbname=bmel', 'root', '');
+				$conexion = new PDO('mysql:host=eu-cdbr-west-03.cleardb.net; dbname=heroku_bf3a5e58760ad8a', 'b1794f344b6fa7', 'e630e93c8c7672c');
 
 				$conexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
